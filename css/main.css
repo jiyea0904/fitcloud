@@ -1,0 +1,73 @@
+@charset "utf-8"; 
+/* CSS Document */
+@import url("common.css");
+
+/* banner */
+.banner{position:relative;}
+.content_bannner_list{width:1108px; height:396px;}
+.banner ul li div{position:relative; width:1108px; height:396px; margin:0 auto;}
+.banner ul li div img{position:absolute; top:0; left:0;}
+.banner ul li div.bg{width:1108px; height:350px; color:#fff; padding:82px 0 0 612px; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; box-sizing:border-box;}
+.banner ul li div.bg h3{font-size:60px; font-weight:500;}
+.banner ul li div.bg p{line-height:30px; font-size:18px; font-weight:400;}
+.banner ul li div.bg a{position:inherit; display:inline-block; margin-top:25px;}
+/* bg_color */
+.banner div.num01 .bg{background:url(../images/main/bg_yellow.gif) no-repeat left top;}
+.banner div.num02 .bg{background:url(../images/main/bg_green.gif) no-repeat left top;}
+.banner div.num03 .bg{background:url(../images/main/bg_blue.gif) no-repeat left top;}
+/* control */
+.flex-direction-nav{position:absolute; top:148px; left:0; width:100%;}
+.flex-direction-nav:after{clear:both; display:block; content:"";}
+.flex-direction-nav ul{width:100%;}
+.flex-prev{float:left; display:inline-block; width:62px; height:52px; background:url(../images/main/btn_arr_prev.png) no-repeat left top; text-indent:-99999px;}
+.flex-next{float:right; display:inline-block; width:62px; height:52px; background:url(../images/main/btn_arr_next.png) no-repeat left top; text-indent:-99999px;}
+
+/* video */
+.video{margin:0 220px; padding:35px 0;}
+.video:after{clear:both; display:block; content:"";}
+.video img{float:left; display:inline-block; width:273px; height:273px; border-radius:136px; -moz-border-radius:136px; -webkit-border-radius:136px;}
+.video div{float:left; width:470px; margin-left:80px;}
+.video div h3{line-height:54px; font-size:48px; font-weight:500; color:#0083cf; letter-spacing:-2px;}
+.video div h3 span{display:block; line-height:30px; font-size:20px; font-weight:300;}
+.video div p{line-height:26px; font-size:18px; font-weight:300; color:#0083cf; margin-top:10px;}
+.video div a{display:inline-block; width:160px; height:40px; line-height:40px; text-align:left; padding:0 20px; margin-top:20px; background:#0083cf; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; box-sizing:border-box;}
+.video div a span{font-size:16px; font-weight:400; color:#fff; background:url(../images/main/arr_white.png) no-repeat right center; padding-right:42px;}
+
+/* link */
+.link{margin:30px 70px;}
+.link:after{clear:both; display:block; content:"";}
+.link dl{float:left; dislay:inline-block; width:356px; height:430px; text-align:center; background:#fff; margin:0 10px; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px;}
+.link dl dd{text-align:center; margin-top:50px;}
+.link dl dt{font-size:28px; font-weight:500; color:#0083cf; margin-top:20px;}
+.link dl dt span{display:block; font-size:16px; font-weight:300; letter-spacing:normal;}
+.link dl a{display:inline-block; width:160px; height:40px; line-height:40px; text-align:left; padding:0 20px; margin-top:20px; background:#deebf6; border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px; box-sizing:border-box;}
+.link dl a span{font-size:16px; font-weight:400; color:#0083cf; background:url(../images/main/arr_blue.png) no-repeat right center; padding-right:42px;}
+
+/* schedule */
+.schedule{float:left; width:732px; height:453px; background:#fff; border:1px solid #4486c6; margin-left:80px; box-sizing:border-box; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px;}
+.calendar{height:254px;}
+.calendar p{float:left; dispaly:inline-block; width:184px; heigt:254px; background:#f0f7fe; text-align:center; padding:45px 0; border-radius:8px 0 0 0; -moz-border-radius:8px 0 0 0; -webkit-border-radius:8px 0 0 0;}
+.calendar p a{display:block;}
+.calendar p span{display:block; line-height:38px; font-size:18px; font-weight:300; color:#444; margin:15px 0;}
+.calendar p span em{display:block; font-size:32px; font-weight:500; color:#4486c6;}
+.calendar table{float:left; width:488px; margin:25px 0 0 30px;}
+.calendar table th{height:35px; line-height:35px; font-size:15px; font-weight:400; color:#4486c6; text-align:center; background:#e8f1fa;}
+.calendar table th.first{ border-radius:18px 0 0 18px; -moz-border-radius:18px 0 0 18px; -webkit-border-radius:18px 0 0 18px;}
+.calendar table th.last{border-radius:0 18px 18px 0; -moz-border-radius:0 18px 18px 0; -webkit-border-radius:0 18px 18px 0;}
+.calendar table td{height:35px; line-height:35px; font-size:14px; font-weight:300; color:#555555; text-align:center; border-top:1px solid #e5e5e5; box-sizing:border-box;}
+.calendar table tr.first td{border:none;}
+.calendar table td span.today{font-weight:500; color:#4486c6;}
+/* list */
+.list{position:relative; height:200px; background:#4486c6; color:#fff; padding:25px 40px; box-sizing:border-box; border-radius:0 0 8px 8px; -moz-border-radius:0 0 8px 8px; -webkit-border-radius:0 0 8px 8px;}
+.list h6{position:relative; height:38px; line-height:38px; font-size:50px; font-weight:500; color:#fff;}
+.list span{position:absolute; top:0; left:68px; height:40px; line-height:20px; font-size:13px; font-weight:300; color:#fff; letter-spacing:normal;}
+.list ul{margin-top:20px;}
+.list ul li{float:left; width:50%; height:30px; line-height:30px; background:url(../images/main/bullet.png) no-repeat left center; padding-left:25px; box-sizing:border-box;}
+.list ul li a{font-size:14px; font-weight:300; color:#b9d4ee;}
+.list ul li:hover{background:url(../images/main/bullet_on.png) no-repeat left center;}
+.list ul li:hover a{font-weight:400; color:#fff;}
+.list a.btn_more{position:absolute; top:25px; right:40px; display:inline-block; height:22px; line-height:22px; font-size:15px; font-weight:300; color:#fff; text-decoration:underline;} 
+
+/* facebook */
+.facebook{float:left; display:inline-block; width:356px; height:453px; background:url(../images/main/img_facebook.gif) no-repeat left top; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; margin-left:20px;}
+

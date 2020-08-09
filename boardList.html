@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: FitCloud HiddenPage ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<div class="wrap">
+			<h1><a href="#"><img src="images/main/logo.png" alt="FitCloud 로고" /></a></h1>
+			<!-- login -->
+			<fieldset>
+				<h5>LOGIN</h5>
+				<label for="text"><input type="text" id="text" name="" value="아이디" /></label>
+				<label for="password"><input type="password" id="password" name="" value="●●●●" /></label>
+				<a href="#" class="btn_login"><img src="images/main/btn_login.png" alt="로그인" /></a>
+			</fieldset>
+			<!-- login //-->
+			<!-- gnb -->
+			<ul class="gnb">
+				<li><a href="#" class="btn_open_allmenu">FitCloud</a></li>
+				<li><a href="#" class="btn_open_allmenu">FitCloud Forum</a></li>
+				<li><a href="#" class="btn_open_allmenu">Support Fourm</a></li>
+				<li><a href="#" class="btn_open_allmenu">Cloud App Center</a></li>
+				<li><a href="#" class="btn_open_allmenu">About Saltware</a></li>
+				<li><a href="#" class="btn_open_allmenu"><img src="images/main/icon_menu.png" alt="메뉴전체보기" /></a></li>
+			</ul>
+			<!-- gnb //-->
+		</div>
+		<!-- allmenu -->
+		<div class="allmenu">
+			<div class="wrap">
+				<ul>
+					<li class="menu01"><span class="title">FitCloud</span>
+						<ul>
+							<li><a href="#">Overview</a></li>
+							<li><a href="#">History</a></li>
+							<li><a href="#">PartnerShip</a></li>
+						</ul>
+					</li>
+					<li class="menu02"><span class="title">FitCloud Forum</span>
+						<ul>
+							<li><a href="#">AWS Blog</a></li>
+							<li><a href="#">AWS Event</a></li>
+							<li><a href="#">AWS Tech Trand</a></li>
+						</ul>
+					</li>
+					<li class="menu03"><span class="title">Support<br />Forum</span>
+						<ul>
+							<li><a href="#">Q & A</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Download Center</a></li>
+							<li><a href="#">Support Forum</a></li>
+						</ul>
+					</li>
+					<li class="menu04"><span class="title">Cloud App Center</span>
+						<ul>
+							<li><a href="#">enCloud365</a></li>
+							<li><a href="#">Billing Analysis</a></li>
+						</ul>
+					</li>
+					<li class="menu05"><span class="title">About Saltware</span>
+						<ul>
+							<li><a href="#">Saltware is...</a></li>
+							<li><a href="#">Saltware Newsletter</a></li>
+							<li><a href="#">Saltware History</a></li>
+						</ul>
+					</li>
+				</ul>
+				<a href="#" class="btn_close"><img src="images/main/btn_close.png" alt="닫기" /></a>
+			</div>
+		</div>
+		<!-- allmenu //-->
+	</div>
+	<!-- header //-->
+	<!-- contents -->
+	<div id="contents">
+		<!-- wrap -->
+		<div class="wrap">
+			<div class="nav">
+				<a href="#" class="home"><span>HOME</span></a>
+				<span class="arr"><img src="images/sub/nav_arr.png" alt="depth" /></span>
+				<div class="btn_wrap">
+					<ul class="menu">
+						<li class="depth off"><a>FitCloud</a>
+							<div class="depth_wrap">
+								<ul class="list">
+									<li><a href="#">Fitcloud Forum</a></li>
+									<li><a href="#">Support Forum</a></li>
+									<li><a href="#">Cloud App Center</a></li>
+									<li class="last"><a href="#">About Saltware</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+				<span class="arr"><img src="images/sub/nav_arr.png" alt="depth" /></span>
+				<div class="btn_wrap">
+					<ul class="menu">
+						<li class="depth_02 off"><a>History</a>
+							<div class="depth_wrap_02">
+								<ul class="list">
+									<li><a href="#">Overview</a></li>
+									<li class="last"><a href="#">PartnerShip</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="contentsArea">
+				<h2>Overview</h2>
+				<!-- 게시판 리스트 iframe 영역입니다 -->
+				<iframe title="게시판 리스트 영역" src="boardList_iframe.html" width="100%" height="800px;" scrolling="no" frameborder="0" >                
+				</iframe>
+				<!-- 게시판 리스트 iframe 영역입니다 //-->	
+			</div>
+		</div>
+		<!-- wrap //-->
+	</div>
+	<!-- contents //-->
+	<!-- footer -->
+	<div id="footer">
+		<div class="wrap">
+			<a href="#"><img src="images/main/icon_facebook.png" alt="페이스북" /></a>
+			<a href="#"><img src="images/main/icon_blog.png" alt="블로그" /></a>
+			<p>© 2017 Saltware Corp. All Rights Reserved.</p>
+			<div class="inputbox">
+				<p class="txt"></p>
+				<select>
+					<option>Family Site</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<!-- footer //-->
+</body>
+</html>
+
+
+
+

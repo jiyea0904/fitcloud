@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: FitCloudPage ::</title>
+<link rel="stylesheet" type="text/css" href="css/board.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+    <!-- searchArea-->
+    <div class="tsearchArea">
+    	<div class="left">
+        	<p>총 <em>3998</em> 건 (<em>11/39</em>)</p>
+            <div class="inputbox sel_100">
+                <p class="txt"></p>
+                <select id="list_num">
+                    <option>10 건</option>
+                    <option>15 건</option>
+                    <option>20 건</option>
+                </select>
+            </div> 
+        </div>
+        <fieldset class="board_search">
+            <div class="inputbox">
+                <p class="txt"></p>
+                <select id="list_order">
+                    <option>제목</option>
+                    <option>본문</option>
+                    <option>작성자</option>
+                    <option>제목 + 본문</option>
+                </select>
+            </div> 
+            <label for="search"></label><input type="text" class="" id="search" /><a class="btn_search" href="#"><img src="images/sub/btn_search.png" alt="검색" /></a>
+        </fieldset>
+    </div>
+    <!-- searchArea//-->
+    <!-- table-->
+    <table cellpadding="0" cellspacing="0" summary="게시판리스트" class="list" >  
+        <caption>게시판리스트</caption>
+        <colgroup>
+            <col width="12%" />
+            <col width="*%" />
+            <col width="25%" />
+            <col width="14%" />
+            <col width="14%" />
+        </colgroup>
+        <thead>
+            <tr>
+				<th class="C first"><span class="table_title">번호</span></th>
+                <th class="C"><span class="table_title">제목</span></th>
+                <th class="C"><span class="table_title">URL</span></th>
+                <th class="C"><span class="table_title">작성자</span></th>
+                <th class="C"><span class="table_title">게시일</span></th>
+            </tr>
+        </thead>
+        <tbody>   
+            <tr>
+                <td class="C">5449</td>
+				<td class="L"><span class="title">G-money</span></td>
+				<td class="L"><a href="http://g-money.gg.go.kr" target="_blank">http://g-money.gg.go.kr</a></td>
+                <td class="C">홍길동</td>
+                <td class="C">2016.10.15</td>
+            </tr>
+            <tr>
+                <td class="C">5448</td>
+                <td class="L"><span class="title">국세청</span></td>
+				<td class="L"><a href="http://www.nts.go.kr" target="_blank">http://www.nts.go.kr</a></td>
+                <td class="C">홍길동</td>
+                <td class="C">2016.10.15</td>
+            </tr>
+            <tr>
+                <td class="C">5447</td>
+                <td class="L"><span class="title">금융결재원</span></td>
+				<td class="L"><a href="http://cretop.com" target="_blank">http://cretop.com</a></td>
+                <td class="C">홍길동</td>
+                <td class="C">2016.10.15</td>
+            </tr>
+            <tr>
+                <td class="C">5446</td>
+                <td class="L"><span class="title">대법원 인터넷 등기서비스</span></td>
+				<td class="L"><a href="http://iros.go.kr" target="_blank">http://iros.go.kr</a></td>
+                <td class="C">홍길동</td>
+                <td class="C">2016.10.15</td>
+            </tr>
+            <tr>
+                <td class="C">5445</td>
+                <td class="L"><span class="title">신용회복지위눤회</span></td>
+				<td class="L"><a href="http://www.crss.or.kr" target="_blank">http://www.crss.or.kr</a></td>
+                <td class="C">홍길동</td>
+                <td class="C">2016.10.15</td>
+            </tr>
+            <tr>
+                <td class="C">5444</td>
+                <td class="L"><span class="title">국세청</span></td>
+				<td class="L"><a href="http://www.nts.go.kr" target="_blank">http://www.nts.go.kr</a></td>
+                <td class="C">홍길동</td>
+                <td class="C">2016.10.15</td>
+            </tr>
+            <tr>
+                <td class="C">5443</td>
+                <td class="L"><span class="title">금융결제원</span></td>
+				<td class="L"><a href="http://cretop.com" target="_blank">http://cretop.com</a></td>
+                <td class="C">홍길동</td>
+                <td class="C">2016.10.15</td>
+            </tr>
+            <tr>
+                <td class="C">5442</td>
+                <td class="L"><span class="title">대법원 인터넷 등기서비스</span></td>
+				<td class="L"><a href="http://iros.go.kr" target="_blank">http://iros.go.kr</a></td>
+                <td class="C">홍길동</td>
+                <td class="C">2016.10.15</td>
+            </tr>
+            <tr>
+                <td class="C">5441</td>
+                <td class="L"><span class="title">신용회복지위원회</span></td>
+				<td class="L"><a href="http://www.crss.or.kr" target="_blank">http://www.crss.or.kr</a></td>
+                <td class="C">홍길동</td>
+                <td class="C">2016.10.15</td>
+            </tr>
+            <tr>
+                <td class="C">5440</td>
+                <td class="L"><span class="title">국세청</span></td>
+				<td class="L"><a href="http://www.nts.go.kr" target="_blank">http://www.nts.go.kr</a></td>
+                <td class="C">홍길동</td>
+                <td class="C">2016.10.15</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- table//-->
+    <!-- tcontrol-->
+    <div class="tcontrol">
+        <!-- paging -->
+        <div class="paging">            	
+            <a href="#" class="no_bg"><img src="images/sub/btn_page_first.png" alt="첫 페이지로 이동" /></a> <a href="#" class="no_bg"><img src="images/sub/btn_page_prev.png" alt="이전 페이지로 이동" /></a> <a href="#" class="first">1</a> <a href="#" class="on">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> <a href="#">8</a> <a href="#">9</a> <a href="#">10</a> <a href="#" class="no_bg"><img src="images/sub/btn_page_next.png" alt="다음 페이지로 이동" /></a> <a href="#" class="no_bg"><img src="images/sub/btn_page_last.png" alt="마지막 페이지로 이동" /></a>
+        </div>
+        <!-- paging//-->
+        <div class="rightArea">
+        	<a class="btn_blue" href="#"><span>등 록</span></a>
+        </div>
+    </div>
+    <!-- tcontrol//-->
+</div>
+</body>
+</html>
